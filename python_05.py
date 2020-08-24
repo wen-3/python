@@ -61,3 +61,30 @@ while i <= 7 :
     i += 1
 total = sum(moneys)
 print("存款總額：%d 元" %(total))
+
+# 刪除串列中的水果
+fruits = ["香蕉", "蘋果", "橘子", "鳳梨", "西瓜"]
+while True:
+    print("串聯元素有：",fruits)
+    fruit = input("請輸入要刪除的水果(直接輸入Enter結束)：")
+    if fruit == "":
+        break
+    n = fruits.count(fruit)
+    if  n > 0:
+        fruits.remove(fruit)
+    else:
+        print(fruit,"不在串列中!")
+
+# 刪除串列中的顏色
+colors = ["紅", "橙", "黃", "綠", "藍"]
+while True:
+    print("串聯元素有：",colors)
+    color = input("請輸入要刪除的顏色(直接輸入Enter結束)：")
+    if color == "":
+        break
+    n = colors.count(color)
+    if  n > 0:
+        colors.remove(color)
+        print("顏色有：", colors)
+    else:
+        print(color,"不在串列中!")
