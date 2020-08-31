@@ -137,3 +137,16 @@ for soldier_number in range(50):
         temp_soldier["tag"] = 'blue'
 for soldier in armys[:3]:
     print(soldier)
+
+# 六都的PM2.5字典
+dict1 = {"台北市": 6,
+         "新北市": 2,
+         "桃園市": 5,
+         "台中市": 8,
+         "台南市": 3,
+         "高雄市": 9
+        }
+while True:
+    name = input("請輸入要查詢的六都名稱:")
+    if name in dict1:
+        print(name + "今天的 PM2.5 值為:" + str(name.index.values))
