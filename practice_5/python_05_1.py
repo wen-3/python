@@ -88,3 +88,4 @@ while True:
         print("顏色有：", colors)
     else:
         print(color,"不在串列中!")
+
