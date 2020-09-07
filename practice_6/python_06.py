@@ -138,7 +138,7 @@ for soldier_number in range(50):
 for soldier in armys[:3]:
     print(soldier)
 
-# 六都的PM2.5字典
+# 1.六都的PM2.5字典
 dict1 = {"台北市": 6,
          "新北市": 2,
          "桃園市": 5,
@@ -146,7 +146,24 @@ dict1 = {"台北市": 6,
          "台南市": 3,
          "高雄市": 9
         }
-while True:
-    name = input("請輸入要查詢的六都名稱:")
-    if name in dict1:
-        print(name + "今天的 PM2.5 值為:" + str(name.index.values))
+name = input("請輸入要查詢的六都名稱:")
+PM25 = dict1.get(name)
+if name in dict1:
+    print(name + "今天的 PM2.5 值為:" + str(PM25))
+else:
+    print("六都中沒有「" + name + "」城市!")
+
+# 2
+dict1 = {"鼠":"親切和藹","牛":"保守努力","虎":"熱情大膽","兔":"溫柔仁慈"}
+
+# 3
+fruits = {"Watermelon":15,"Banana":20,"Pineapple":25,"Orange":12,"Apple":18}
+fruitslist = sorted(fruits.items(),key =lambda item:item[0])
+
+
+# 4
+noodles = {'牛肉麵':100, '肉絲麵':80, '陽春麵':60, '大滷麵':90, '麻醬麵':70}
+print(noodles)
+price_list = sorted(noodles.items(),key=lambda item:item[1])
+
+
